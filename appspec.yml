@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/codedeploy-deployment-staging-area/
+    destination: /home/ec2-user
   - source: /scripts/configure_http_port.xsl
-    destination: /tmp/codedeploy-deployment-staging-area/
+    destination: /home/ec2-user
 hooks:
   ApplicationStop:
     - location: scripts/stop_application
