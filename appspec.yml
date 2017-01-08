@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user
+    destination: /opt/tomcat/webapps/
   - source: /scripts/configure_http_port.xsl
     destination: /home/ec2-user
 hooks:
