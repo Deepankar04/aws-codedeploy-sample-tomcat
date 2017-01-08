@@ -2,9 +2,9 @@
 
 set -e
 
-mkdir -p /var/codedeploy/tomcat-sample
+mkdir -p /home/cloudifyops/Documents/apache-tomcat-8.5.9
 
-cat <<EOF >/var/codedeploy/tomcat-sample/env.properties
+cat <<EOF >/home/cloudifyops/Documents/apache-tomcat-8.5.9/env.properties
 APPLICATION_NAME=$APPLICATION_NAME
 DEPLOYMENT_GROUP_NAME=$DEPLOYMENT_GROUP_NAME
 DEPLOYMENT_ID=$DEPLOYMENT_ID
