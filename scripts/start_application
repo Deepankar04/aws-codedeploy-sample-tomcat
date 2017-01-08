@@ -2,12 +2,12 @@
 
 set -e
 
-CATALINA_HOME='/home/cloudifyops/Documents/apache-tomcat-8.5.9'
+CATALINA_HOME='/opt/tomcat'
 DEPLOY_TO_ROOT='true'
 #CONTEXT_PATH='##CONTEXT_PATH##'
 SERVER_HTTP_PORT='80'
 
-TEMP_STAGING_DIR='/tmp/codedeploy-deployment-staging-area/target'
+TEMP_STAGING_DIR='/home/ec2-user'
 WAR_STAGED_LOCATION="$TEMP_STAGING_DIR/SampleMavenTomcatApp.war"
 HTTP_PORT_CONFIG_XSL_LOCATION="$TEMP_STAGING_DIR/configure_http_port.xsl"
 
