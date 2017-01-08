@@ -2,7 +2,7 @@
 
 set -e
 
-CATALINA_HOME=/usr/share/tomcat8-codedeploy
+CATALINA_HOME=/home/cloudifyops/Documents/tomcat8
 
 # Tar file name
 TOMCAT8_CORE_TAR_FILENAME='apache-tomcat-8.5.9.tar.gz'
@@ -47,7 +47,7 @@ cat > /etc/init.d/tomcat8 <<'EOF'
 # processname: tomcat8
 PATH=$JAVA_HOME/bin:$PATH
 export PATH
-CATALINA_HOME='/usr/share/tomcat8-codedeploy'
+CATALINA_HOME='/home/cloudifyops/Documents/tomcat8'
 
 case $1 in
 start)
